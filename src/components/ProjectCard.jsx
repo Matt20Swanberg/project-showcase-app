@@ -1,8 +1,10 @@
-function ProjectCard() {
+import React, { useState } from "react"
+
+function ProjectCard({title, description}) {
   return (
     <div>
-      <h3>Project Title</h3>
-      <p>Project description goes here.</p>
+      <h3>{title}</h3>
+      <p>{description}</p>
     </div>
   );
 }

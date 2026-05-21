@@ -1,15 +1,37 @@
-function ProjectForm() {
-  return (
-    <section>
-      <h2>Add Project</h2>
+import React, { useState } from "react";
 
-      <input type="text" placeholder="Project Title" />
+function ProjectForm({ onAddProject }) {
+    const [title, setTitle] = useState("");
+    const [description, setDescription] = useState("")
 
-      <textarea placeholder="Project Description"></textarea>
+    function handleSubmit(e) {
+        e.preventDefault();
 
-      <button>Add</button>
-    </section>
-  );
+        const newProject = {
+            id: Date.now(),
+            title: title,
+            description: description
+        }
+
+        onAddProject(newProject)
+        setTitle("")
+        setDescription("")
+    }
+
+    return (
+        <section>
+            <form onSubmit={handleSubmit}>
+
+                <h2>Add Project</h2>
+                                                                             
+                <input type="text" placeholder="Project Title" value={title} onChange={(e) => setTitle(e.target.value)}/>
+
+                <textarea placeholder="Project Description" value={description} onChange={(e) => setDescription(e.target.value)}></textarea>
+
+                <button tpye="submit">Add New Project</button>
+            </form>
+        </section>
+    );
 }
 
 export default ProjectForm;
