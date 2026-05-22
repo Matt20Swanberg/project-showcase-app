@@ -108,8 +108,7 @@ Search
 
 .primary-button:hover {
   transform: scale(1.05);
-  opacity: 0.4;
-  color: black;
+  opacity: 0.8;
 }
 
 .delete-project-button {
