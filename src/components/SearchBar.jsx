@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 
+// SearchBar handles project search input and filtering
 function SearchBar({ searchTerm, setSearchTerm }) {
 
-    console.log(searchTerm);
-    
     return (
         <section className="search-section">
+
+            {/* Controlled input for searching projects */}
             <input className="search-input" type="text"
                 placeholder="Search Projects"
                 value={searchTerm}
