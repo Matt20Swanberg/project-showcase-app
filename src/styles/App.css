@@ -2,5 +2,77 @@
   max-width: 800px;
   margin: 0 auto;
   padding: 24px;
-  word-spacing: vertical;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 16px 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-color: black;
+}
+
+.project-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 16px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-color: black;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 16px 16px;
+  border-radius: 12px;
+  border-color: black;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.form-textarea {
+  width: 100%;
+  min-height: 120px;
+  resize: vertical;
+  padding: 16px 16px;
+  border-radius: 12px;
+  border-color: black;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 30%;
+  background-color: rgb(0, 255, 153);
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  border-color: aquamarine;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  opacity: 0.4;
+  color: black;
+}
+
+.search-input {
+  width: 40%;
+  padding: 16px 16px;
+  margin-bottom:-24px;;
+  border-radius: 12px;
+  border-color: black;
+  font-size: 16px;
+  box-sizing: border-box;
 }

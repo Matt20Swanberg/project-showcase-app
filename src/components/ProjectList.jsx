@@ -8,8 +8,6 @@ function ProjectList({ projects }) {
 
                 <ProjectCard key={project.id} title={project.title} description={project.description} />
             ))}
-            <ProjectCard />
-            <ProjectCard />
         </section>
     );
 }
