@@ -1,3 +1,7 @@
+/* =========================
+Layout
+========================= */
+
 .app-container {
   max-width: 800px;
   margin: 0 auto;
@@ -7,6 +11,22 @@
   gap: 24px;
 }
 
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* =========================
+Cards
+========================= */
+
 .form-card {
   background-color: white;
   border-radius: 12px;
@@ -14,6 +34,18 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-color: black;
 }
+
+.project-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 16px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgb(98, 98, 98);
+}
+
+/* =========================
+   Forms & Inputs
+========================= */
 
 form {
   display: flex;
@@ -25,7 +57,7 @@ form {
   width: 100%;
   padding: 16px 16px;
   border-radius: 12px;
-  border-color: black;
+  border: 1px solid rgb(98, 98, 98);
   font-family: inherit;
   font-size: 16px;
   box-sizing: border-box;
@@ -37,20 +69,30 @@ form {
   resize: vertical;
   padding: 16px 16px;
   border-radius: 12px;
-  border-color: black;
+  border: 1px solid rgb(98, 98, 98);
   font-family: inherit;
   font-size: 16px;
   box-sizing: border-box;
 }
 
-.error-message {
+/* =========================
+Search
+========================= */
 
-  color: #ff0000;
-  padding: 0px 8px;
-  font-size: 18px;
-  font-weight: bold;
-  margin: 0;
+.search-input {
+  width: 40%;
+  padding: 16px 16px;
+  margin-bottom: -24px;
+  border-radius: 12px;
+  border: 2px solid rgb(98, 98, 98);
+  font-family: inherit;
+  font-size: 16px;
+  box-sizing: border-box;
 }
+
+/* =========================
+   Buttons
+========================= */
 
 .primary-button {
   width: 30%;
@@ -68,38 +110,6 @@ form {
   transform: scale(1.05);
   opacity: 0.4;
   color: black;
-}
-
-.search-input {
-  width: 40%;
-  padding: 16px 16px;
-  margin-bottom: -24px;
-  border-radius: 12px;
-  border-color: black;
-  font-family: inherit;
-  font-size: 16px;
-  box-sizing: border-box;
-}
-
-.empty-state {
-  text-align: center;
-  color: #777;
-  font-style: italic;
-  padding: 0px;
-}
-
-.project-card {
-  background-color: white;
-  border-radius: 12px;
-  padding: 16px 30px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-color: black;
-}
-
-.card-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .delete-project-button {
@@ -124,4 +134,23 @@ form {
   transform: scale(1.05);
   border-radius: 8px;
   border-color: rgb(255, 112, 112);
+}
+
+.error-message {
+  color: #ff0000;
+  padding: 0px 8px;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* =========================
+   Typography & Messages
+========================= */
+
+.empty-state {
+  text-align: center;
+  color: #777;
+  font-style: italic;
+  padding: 0px;
 }
