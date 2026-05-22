@@ -1,9 +1,17 @@
 import React, { useState } from "react"
 
-function ProjectCard({title, description}) {
+function ProjectCard({ title, description, id, handleDeleteProject }) {
   return (
     <div className="project-card">
-      <h3 className="project-title">{title}</h3>
+      <div className="card-header">
+        <h3 className="project-title">{title}</h3>
+        <button
+          className="delete-project-button"
+          onClick={() => handleDeleteProject(id)}
+        >
+          X
+        </button>
+      </div>
       <p className="project-description">{description}</p>
     </div>
   );
