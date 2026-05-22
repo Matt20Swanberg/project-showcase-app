@@ -19,16 +19,16 @@ function ProjectForm({ onAddProject }) {
     }
 
     return (
-        <section>
+        <section className="form-card">
             <form onSubmit={handleSubmit}>
 
-                <h2>Add Project</h2>
-                                                                             
-                <input type="text" placeholder="Project Title" value={title} onChange={(e) => setTitle(e.target.value)}/>
+                <h2 className="section-title">Add Project</h2>
 
-                <textarea placeholder="Project Description" value={description} onChange={(e) => setDescription(e.target.value)}></textarea>
+                <input className="form-input" type="text" placeholder="Project Title" value={title} onChange={(e) => setTitle(e.target.value)} />
 
-                <button tpye="submit">Add New Project</button>
+                <textarea className="form-textarea" placeholder="Project Description" value={description} onChange={(e) => setDescription(e.target.value)}></textarea>
+
+                <button className="primary-button" type="submit">Add New Project</button>
             </form>
         </section>
     );
